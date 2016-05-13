@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WebApplication1.Main" %>
+
+
+
+
+
+<%@ Register src="controls/Login.ascx" tagname="Login" tagprefix="uc1" %>
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>InFund</title>
+    <link href="style/Mainstyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Header"><div id="Login">
+            <uc1:Login ID="Login1" runat="server" />
+           </div>  InFund
+           
+            </div>
+
+    <div id="MainContent">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="Footer">
+            Copyright InFund Technologies ltd
+            <asp:Literal ID="ltrYear" runat="server"></asp:Literal>
+        </div>
+    </form>
+</body>
+</html>
